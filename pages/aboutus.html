@@ -3,35 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style2.css">
     <title>NUESTRO EQUIPO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
 </head>
 <body>
-    <header>
-        <div>
-            <img src="../assets/img/LogoMakr-1uTJtK.png" alt="Logo del sitio">
+    <header class="container-fluid bg-danger">
+        <div class="row h-100">
+            <div class="col-3 bg-dark border border-secondary border-2">
+              <div class="d-flex align-items-center justify-content-center h-100">
+                <img src="../assets/img/LogoMakr-1uTJtK.png" alt="Logo del sitio" class="img-fluid h-100 p-2">
+              </div>
+            </div>
+            
+            <!-- NAV -->
+            <nav class="col-9 navbar navbar-expand-lg bg-danger border border-dark border-2">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">HOME</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./planes.html">PLANES PERSONALIZADOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./aboutus.html">QUIENES SOMOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./faq.html">FAQs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTO</a>
+                      </li>
+                       
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </div>
-        <nav id="nav">
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="./planes.html">PLANES PERSONALIZADOS</a></li>
-                <li><a href="./aboutus.html">QUIENES SOMOS</a></li>
-                <li><a href="./faq.html">FAQs</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main id="main3">
-        <section id="section1">
-            <article>
-                <h2>Descubre Quienes Somos y por qué Nuestro Equipo es el Indicado para acompañarte en este Proceso.</h2>  
-            </article>
-        </section>
-
-        <div id="divabout">
-            <article>
+    <main class="container-fluid bg-dark bg-gradient">
+        <div class="row h-100">
+          
+          <section class=" d-flex flex-column justify-content-center align-items-center">
+            <h1 class="text-light fw-bold pb-5 p-3">Sobre Nosotros</h1>
+            <h2 class="text-light fs-5 pt-2">Descubre las maneras Más Efectivas para lograr un Cambio y Aprende cuáles son las Mejores Opciones para Armar tu Plan de Entrenamiento!</h2>
+            <article class="text-light p-5 fs-6">
                 <h2><strong>Nuestro Equipo:</strong></h2>
                 <ol>
                     <li><strong>Equipo Profesional: Contamos con un Equipo de 10 Profesionales con amplia Experiencia y conocimientos en el ámbito del Entrenamiento y Fitness. </strong></li>
@@ -39,18 +61,21 @@
                     <li><strong>Entrenadores: </strong>Nuestro Equipo brindará atención Personalizada a cada Cliente, mediante el chat de Facebook o Instagram.</li>
                 </ol> 
             </article>
-        </div>
-        
-        
+            </section>
+         </div>
     </main>
-    
-    <footer>
-        <div>PIE DE PÁGINA
+
+    <footer class="container-fluid">
+        <div class="row d-flex h-100 bg-dark border-top border-light border-1">
+          <p class="text-light fw-bold">PIE DE PÁGINA</p>
+          <ul>
+            <li><a href="http://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="http://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+          </ul>
         </div>
-        <ul>
-            <li><a href="http://www.facebook.com/" target="_blank" class="icono-facebook">FACE</a></li>
-            <li><a href="http://www.instagram.com/" target="_blank" class="icono-instagram">IG</a></li>
-        </ul>
-    </footer>
+    </footer>   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
