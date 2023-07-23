@@ -1,0 +1,17 @@
+// MAPS
+$fuente-optimizada: (color: $color-font-default, tamaño: $letra-chica, fuente: $fuente);
+$redes-sociales: (color:rgb(175, 50, 0), fuente: 'Arial', size: 2rem);
+$parrafos: (color: $color-font-default, padding: 1rem, fuente: "Arial, Helvetica, sans-serif", sizing: $letra-mediana);
+
+
+// MIXINS
+@mixin img($width, $display, $tipo, $justify-content, $align-content, $padding)
+{
+    width: $width;
+    display: $display;
+    flex-direction: $tipo;
+    justify-content: $justify-content;
+    align-items: $align-content;
+    padding: $padding;
+}
+

@@ -1,0 +1,62 @@
+@import "./utilities/variables";
+@import "./utilities/mapsymixins";
+@import "./globals/reset";
+
+
+a{
+    color: $color-oro;
+}
+
+footer {
+	div {
+		ul {
+			li {
+				a {
+					color: map-get($redes-sociales, color);
+					font-family: map-get($redes-sociales, fuente);
+					font-size: map-get($redes-sociales, size);
+				}
+			}
+		}
+		p {
+			display: flex;
+			justify-content: $justify;
+			font-family: $fuente;
+		}
+	}
+}
+nav {
+	ul {
+		li {
+			font-size: $letra-grande;
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			font-weight: $letra-pesada;
+		}
+	}
+}
+p {
+	color: map-get($parrafos, color);
+	padding: map-get($parrafos, padding);
+	font-family: map-get($parrafos, fuente);
+	font-size: map-get($parrafos, sizing);
+}
+
+li{
+    @extend p;
+}
+
+.navbar-brand {
+	font-size: $letra-grande;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-weight: $letra-pesada;
+}
+
+
+#foto1{
+    @include img (100%, flex, column, center, center, 50px)
+}
+
+#foto2{
+    @include img (100%, flex, column, center, center, 50px) 
+}
+
